@@ -1,4 +1,5 @@
-This is the repository of additional modifications to Forseti.
+This is the forked from [terraform-google-forseti](https://github.com/forseti-security/terraform-google-forseti) repository.
+The following are additional modifications from Forseti.
 
 1. allow Cloud SQL deletion [Ref](https://github.com/forseti-security/terraform-google-forseti/pull/616)
 2. fix google-cloud-sdk installation [Ref](https://github.com/forseti-security/terraform-google-forseti/pull/618)
