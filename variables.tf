@@ -866,6 +866,11 @@ variable "client_service_account" {
 #------------#
 # Forseti db #
 #------------#
+variable "cloudsql_suffix" {
+  description = "Cloud SQL suffix because Cloud SQL can't reuse the name of the deleted instance until one week"
+  default     = ""
+}
+
 variable "cloudsql_region" {
   description = "CloudSQL region"
   default     = "us-central1"
