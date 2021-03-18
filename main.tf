@@ -175,6 +175,7 @@ module "server" {
 
 module "cloudsql" {
   source                       = "./modules/cloudsql"
+  cloudsql_suffix              = var.cloudsql_suffix
   cloudsql_db_name             = var.cloudsql_db_name
   cloudsql_disk_size           = var.cloudsql_disk_size
   cloudsql_net_write_timeout   = var.cloudsql_net_write_timeout

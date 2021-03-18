@@ -22,7 +22,7 @@ locals {
   cloudsql_zone     = "${var.cloudsql_region}-c"
   network_project   = var.network_project != "" ? var.network_project : var.project_id
   cloudsql_password = var.cloudsql_password == "" ? random_password.password.result : var.cloudsql_password
-  random_hash       = var.suffix
+  random_hash       = var.cloudsql_suffix == "" ? var.suffix : var.cloudsql_suffix
 }
 
 #------------------------------------#

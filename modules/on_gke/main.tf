@@ -477,6 +477,7 @@ module "client" {
 #------------------#
 module "cloudsql" {
   source                       = "../cloudsql"
+  cloudsql_suffix              = var.cloudsql_suffix
   cloudsql_disk_size           = var.cloudsql_disk_size
   cloudsql_private             = var.cloudsql_private
   cloudsql_region              = var.cloudsql_region
