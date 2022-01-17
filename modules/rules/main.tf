@@ -62,6 +62,7 @@ resource "google_storage_bucket_object" "main" {
   name    = element(local.files, count.index)
   content = element(data.template_file.main.*.rendered, count.index)
   bucket  = var.server_gcs_module.forseti-server-storage-bucket
+  content_language = "en"
 
   lifecycle {
     ignore_changes = [
